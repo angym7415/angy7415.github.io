@@ -7,7 +7,7 @@ function procesa(){
     var Clave = document.getElementById("clave").value,
     Nombre = document.getElementById("nombre").value,
     Telefono = document.getElementById("telefono").value,
-    Personas = document.getElemtById("personas").value,
+    Personas = document.getElementById("personas").value,
     fecha = document.getElementById("fecha").value;
     
     
