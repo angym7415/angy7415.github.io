@@ -12,7 +12,7 @@ function procesa(){
     
     
     salidaFecha.textContent = "Fecha: "+fecha;
-    salidaPersonas.textContent = "Nuemero de Personas:  "+Personas;
+    salidaPersonas.textContent = "Nuemero de Personas: "+Personas;
     salidaClave.textContent = "Clave: "+Clave;
     salidaNombre.textContent = "Nombre: "+Nombre;
     salidaTelefono.textContent = "Telefono: "+Telefono;   
