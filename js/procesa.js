@@ -25,6 +25,7 @@ function alerta(){
     Clave = document.getElementById("clave").value,
     Nombre = document.getElementById("nombre").value,
     Telefono = document.getElementById("telefono").value,
+    Personas = document.getElementById("personas").value,
     fecha = document.getElementById("fecha").value;
     
     alert ( "Su reservación se guardo con exito con fecha: " + fecha + "\nPara:  " + Clave + " A nombre de:  " + Nombre + " Personas: " + Personas +" Telefono de contacto:  " + Telefono);
