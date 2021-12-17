@@ -15,14 +15,14 @@ function procesa(){
     salidaPersonas.textContent = "Nuemero de Personas:  "+Personas;
     salidaClave.textContent = "Clave: "+Clave;
     salidaNombre.textContent = "Nombre: "+Nombre;
-    salidaTelefono.textContent = "Telefono: "+Telefono;
-    
+    salidaTelefono.textContent = "Telefono: "+Telefono;   
 
 }
 
 function alerta(){
 
-    var Clave = document.getElementById("clave").value,
+    var 
+    Clave = document.getElementById("clave").value,
     Personas = document.getElementById("personas").value,
     Nombre = document.getElementById("nombre").value,
     Telefono = document.getElementById("telefono").value,
