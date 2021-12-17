@@ -27,6 +27,6 @@ function alerta(){
     var Personas = document.getElementById("personas").value;
     var fecha = document.getElementById("fecha").value;
     
-    alert ( "Su reservación se guardo con exito con fecha: " + fecha + "Para:  " + Clave + " A nombre de:  " + Nombre + " Personas: " + Personas +" Telefono de contacto:  " + Telefono);
+    alert ( "Su reservación se guardo con exito con fecha: " + fecha + "\nPara:  " + Clave + " A nombre de:  " + Nombre + " Personas: " + Personas +" Telefono de contacto:  " + Telefono);
 
 }
