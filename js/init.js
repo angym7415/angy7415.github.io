@@ -2,12 +2,13 @@ $(document).ready(function()
  {
     // Inicializar la base de datos
     var config = {
-        apiKey: "AIzaSyANBMwjLUMhYwq2CDywa0Z47G2E3aJQ3ex",
-        authDomain: "veigapp.firebaseapp.com",
-        databaseURL: "https://veigapp.firebaseio.com",
-        projectId: "firebase-veigapp",
-        storageBucket: "firebase-veigapp.appspot.com",
-        messagingSenderId: "841479533091"
+        apiKey: "AIzaSyCPvFqv2k1Czd6Me7m7Ekw8zNM0O2Re_EQ",
+        authDomain: "angelica-56c9f.firebaseapp.com",
+        projectId: "angelica-56c9f",
+        storageBucket: "angelica-56c9f.appspot.com",
+        messagingSenderId: "311463537448",
+        appId: "1:311463537448:web:cd844a510585705a99be1d",
+        measurementId: "G-93R4JEYPRE"
     };
     firebase.initializeApp(config);
 
