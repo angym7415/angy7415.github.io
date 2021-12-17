@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página web</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!--INICIO-->
+    <header class="header" id="inicio">
+        <img class="hamburguer" src="img/hamburguesa.svg" alt="">
+        <nav class="menu-navegacion">
+                <a href="#inicio">INICIO</a>
+                <a href="#servicio">SERVICIOS</a>
+                <a href="#galeria">GALERIA</a>
+                <a href="#expertos">EXPERTOS</a>
+                <a href="#reserva">RESERVACIONES</a>
+                <a href="#footer">Contacto</a>
+        </nav>
+        <div class="contenedor head">
+            <h1 class="titulo">EN ESTE LUGAR PASAN COSAS MAGICAS</h1>
+            <p class="copy">Conoce nuestro nuevo servicio de restaurante.</p>
+        </div>
+        
+    </header>
+    <main>
+         <!--SERVICIOS-->
+        <section class="services contenedor" id="servicio">
+            <h2 class="subtitulo">NUESTROS SERVICIOS</h2>
+            <div class="contenedor-servicio">
+                <img src="img/NS.jpg" alt="">
+                <div class="checklist-servicio">
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">1</span>RESTAURANTE</h3>
+                        <p> 
+                            ¿Por qué ir? No es una cocina de autor más, es el cuidado por los detalles 
+                            y respeto a los productos, una sugerencia para ser puristas del sabor y 
+                            darse una vuelta por los orígenes. El menú parte de un equilibrio entre 
+                            productos locales e influencias mediterráneas.
+                        </p>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">2</span>JARDIN DE EVENTOS</h3>
+                        <p>   Jardines, los mejor ubicados de la zona sur, con magnífico mantenimiento, 
+                                empastados 100% garantizado y arbolados, con baños de primera calidad y 
+                                suficientes para su capacidad, estacionamiento o valet parking.</p>
+                        <p>    Gastronomía, menús elaborados con las mejores materias primas y cheff 
+                                calificados en el ramo.</p>
+                        <p>    Servicio, nuestro personal está capacitado para brindarte la mejor atención 
+                                a ti y a tus invitados.</p>
+                        <p>    Coordinación, no sólo encontrarás un lugar con banquete, sino que contarás 
+                                con un equipo de asesoría especializado en la realización de eventos especiales 
+                                de principio a fin.</p>
+                        <p>    Precios, los más competitivos del ramo y facilidades de pago.</p>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">3</span>JARDIN PARA TUS FOTOS</h3>
+                        <p> Ven y captura ese momento tan especial.</p>
+                        <p> No es necesario consumir, solo necesitas hacer una reservacion y sin costo.</p>
+                        <p> Puedes dejar tu aoprtación voluntaria.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!--GALERIA-->
+        <section class="gallery" id="galeria">
+            <div class="contenedor">
+                <h2 class="subtitulo">Galeria</h2>
+                <div class="contenedor-galeria">
+                    <img src="img/1.jfif" class="img-galeria" alt="Hola">
+                    <img src="img/3.jfif" class="img-galeria" alt="">
+                    <img src="img/10.jfif" class="img-galeria" alt="">
+                    <img src="img/11.jfif" class="img-galeria" alt="">
+                    <img src="img/15.jpg" class="img-galeria" alt="">
+                    <img src="img/16.jpg" class="img-galeria" alt="">
+                </div>
+            </div>
+        </section>
+
+         <!--CERRAR LAS IMAGENES-->
+        <div class="imagen-light">
+            <img src="img/close.svg" alt="" class="close">
+            <img src="" alt="" class="agregar-imagen">
+        </div>
+
+         <!--CONTENEDOR-->
+        <section class="contenedor" id="expertos">
+            <h2 class="subtitulo">Expertos en:</h2>
+            <section class="experts">
+                <div class="cont-expert">
+                    <img src="img/6.jpg" class="img-galeria" alt="">
+                    <h3 class="n-expert">BODAS</h3>
+                </div>
+                <div class="cont-expert">
+                    <img src="img/7.jpg" class="img-galeria" alt="">
+                    <h3 class="n-expert">BAUTIZOS</h3>
+                </div>
+                <div class="cont-expert">
+                    <img src="img/8.jpg" class="img-galeria" alt="">
+                    <h3 class="n-expert">XV AÑOS</h3>
+                </div>
+            </section>
+        </section>
+
+         <!--RESERVACIONES-->
+        <section class="contenedor" id="reservaciones">
+            <h2 class="subtitulo">Reservar en linea nunca fue tan facil.</h2>
+            <section class="reserv">
+                <div class="cont-reserv">
+                    <img src="img/recepcion.svg" alt="">
+                
+            </section>    
+                <form id="forma" action="javascript:procesa();">
+                    <p><em>Es necesario llenar todos los campos</em></p>
+
+                    <p>
+                        <label accesskey="C" class="n-service">
+                            Tipo de reservación:
+                            <input name="clave"
+                                   type="text"
+                                   id="clave"
+                                   autofocus
+                                   required
+                                   maxlength="80" 
+                                   size="20" 
+                                   pattern="{1,50}"
+                                   placeholder="Restaurante,foto,cotizacion" 
+                            >
+                        </label>
+                    </p>
+
+                    <p>
+                        <label accesskey="N" class="n-service">
+                            Nombre
+                            <input name="nombre"
+                                   id="nombre"
+                                   type="text"
+                                   required
+                                   maxlength="50" 
+                                   size="20" 
+                                   pattern="{1,50}"
+                                   placeholder="1 a 50 caracteres" 
+                            >
+                        </label>
+                    </p>
+
+                    <p>
+                        <label accesskey="T" class="n-service" >
+                            Teléfono
+                            <input name="telefono"
+                                   id="telefono"
+                                   type="text"
+                                   required
+                                   maxlength="14" 
+                                   size="20" 
+                                   pattern="{8,14}"
+                                   placeholder="8 a 14 digitos" 
+                            >
+                        </label>
+                    </p>
+
+                    <p>
+                        <label accesskey="F" class="n-service">
+                            Fecha
+                            <input name="fecha"
+                                   id="fecha"
+                                   type="date"
+                                   required
+                                   max="2023-01-01"
+                                   min="2022-01-01" 
+                            >
+                        </label>
+                    </p>
+                
+
+                    <input type="submit" value="En Pantalla" accesskey="M">
+                    <input type="button" onclick="alerta();" value="Alerta">
+
+                    <br><output id="salidaClave"></output>
+                    <br><output id="salidaNombre"></output>
+                    <br><output id="salidaTelefono"></output>
+                    <br><output id="salidaFecha"></output>
+
+                </form>  
+            </div>                    
+        </section>
+    </main>
+ <!--PIE DE PAGINA-->
+    <footer id="footer">
+        <div class="contenedor footer-content">
+                <div class="contact-us">
+                    <h2 class="brand">AngyMtz Design</h2>
+                    <p>¡Se un invitado en tu propio evento!</p>
+                </div>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/haciendadecortesmx" class="social-media-icon">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                    <a href="https://www.instagram.com/haciendadecortesmx/?hl=es-la" class="social-media-icon">
+                        <i class='bx bxl-instagram' ></i>
+                    </a>
+                </div>
+        </div>
+        <div class="line"></div>
+    </footer>
+    
+    <script src="js/menu.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js/procesa.js"></script>
+</body>
+</html>
