@@ -14,52 +14,14 @@ $(document).ready(function()
 
     var database = firebase.database();
 
-    var articulo;
-    var descripcion;
-    var precio;
-    var imagen;
-
-    $("#imagen").change(function()
-    {
-        var descriptor=new FileReader();
-        descriptor.readAsDataURL(this.files[0]);
-
-        descriptor.onloadend = function()
-        {
-            imagen=descriptor.result;
-            $("#previsualizacion").attr("src",imagen);
-        };
-    });
-
-
-    $("#formularioAlta").change(function()
-    {
-        articulo=$("#articulo").val();
-        descripcion=$("#descripcion").val();
-        precio=$("#precio").val();
-
-        if (articulo && descripcion && precio)
-        {
-            $("#botonGuardar").prop("disabled",false);
-        }
-        else
-        {
-            $("#botonGuardar").prop("disabled",true);
-        }
-
-    });
-
-
     $("#botonGuardar").click(function()
     {
-        articulo=$("#articulo").val();
-        descripcion=$("#descripcion").val();
-        precio=$("#precio").val();
-
-        if (!imagen)
-        {
-            imagen="NONE";
-        }
+        
+        var Clave = document.getElementById("clave").value;
+        var Nombre = document.getElementById("nombre").value;
+        var Telefono = document.getElementById("telefono").value;
+        var Personas = document.getElementById("personas").value;
+        var fecha = document.getElementById("fecha").value;
 
         // Indicamos que la referencia base de nuestra base de datos es productos (algo así como el padre)
         // del que colgarán el resto de nodos hijos.
@@ -99,10 +61,11 @@ $(document).ready(function()
         // Usaremos el método push en lugar de set
         referencia.push(
         {
-            articulo: articulo,
-            descripcion: descripcion,
-            precio: precio,
-            imagen: imagen
+            clave: Clave,
+            nombre: Nombre,
+            telefono: Telefono,
+            personas: Personas,
+            fecha: fecha
         },function()
         {
             alert('El alta se ha realizado correctamente');
