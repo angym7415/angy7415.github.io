@@ -1,16 +1,19 @@
 $(document).ready(function()
  {
-    // Inicializar la base de datos
+    // Set the configuration for your app
+    // TODO: Replace with your project's config object
     var config = {
-        apiKey: "AIzaSyCPvFqv2k1Czd6Me7m7Ekw8zNM0O2Re_EQ",
-        authDomain: "angelica-56c9f.firebaseapp.com",
-        databaseURL: "https://angelica-56c9f-default-rtdb.firebaseio.com/",
-        projectId: "angelica-56c9f",
-        storageBucket: "angelica-56c9f.appspot.com",
-        messagingSenderId: "311463537448"
+    apiKey: "AIzaSyCPvFqv2k1Czd6Me7m7Ekw8zNM0O2Re_EQ",
+    authDomain: "angelica-56c9f.firebaseapp.com",
+    // For databases not in the us-central1 location, databaseURL will be of the
+    // form https://[databaseName].[region].firebasedatabase.app.
+    // For example, https://your-database-123.europe-west1.firebasedatabase.app
+    databaseURL: "https://angelica-56c9f-default-rtdb.firebaseio.com",
+    storageBucket: "angelica-56c9f.appspot.com"
     };
     firebase.initializeApp(config);
 
+    // Get a reference to the database service
     var database = firebase.database();
 
     $("#botonGuardar").click(function()
