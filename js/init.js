@@ -3,13 +3,13 @@ $(document).ready(function()
     // Set the configuration for your app
     // TODO: Replace with your project's config object
     var config = {
-    apiKey: "AIzaSyCPvFqv2k1Czd6Me7m7Ekw8zNM0O2Re_EQ",
-    authDomain: "angelica-56c9f.firebaseapp.com",
+    apiKey: "AIzaSyBXNMhKyoeh-asedrnFm8Zfxh_hjzl5Ogc",
+    authDomain: "restaurante-6aba8.firebaseapp.com",
     // For databases not in the us-central1 location, databaseURL will be of the
     // form https://[databaseName].[region].firebasedatabase.app.
     // For example, https://your-database-123.europe-west1.firebasedatabase.app
-    databaseURL: "https://angelica-56c9f-default-rtdb.firebaseio.com",
-    storageBucket: "angelica-56c9f.appspot.com"
+    databaseURL: "https://restaurante-6aba8-default-rtdb.firebaseio.com/",
+    storageBucket: "restaurante-6aba8.appspot.com"
     };
     firebase.initializeApp(config);
 
