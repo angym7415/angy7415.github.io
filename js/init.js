@@ -4,11 +4,10 @@ $(document).ready(function()
     var config = {
         apiKey: "AIzaSyCPvFqv2k1Czd6Me7m7Ekw8zNM0O2Re_EQ",
         authDomain: "angelica-56c9f.firebaseapp.com",
+        databaseURL: "https://angelica-56c9f-default-rtdb.firebaseio.com/",
         projectId: "angelica-56c9f",
         storageBucket: "angelica-56c9f.appspot.com",
-        messagingSenderId: "311463537448",
-        appId: "1:311463537448:web:cd844a510585705a99be1d",
-        measurementId: "G-93R4JEYPRE"
+        messagingSenderId: "311463537448"
     };
     firebase.initializeApp(config);
 
